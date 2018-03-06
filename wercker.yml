@@ -1,7 +1,7 @@
 box: combient/java-mvn
 build:
   steps:
-    # Build Spring Boot Sample application
+    # Build Spring Boot Sample application mhel
     - script:
         name: Maven install
         code: mvn install
