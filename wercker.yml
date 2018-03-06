@@ -15,11 +15,11 @@ push:
         repository: $DOCKER_REPOSITORY
         registry: https://registry.hub.docker.com/v2
         cmd: java -jar  /pipeline/source/target/springbootdemo-0.0.1.war
-restart-occs:
+restart-occs-container:
   steps:
     # Manage Oracle Container Cloud Service container
     steps:
-    - peternagy/oracle-occs-container-util:    
+    - peternagy/oracle-occs-container-util@1.0.0:    
         occs_user: $OCCS_USER
         occs_password: $OCCS_PASSWORD
         rest_server_url: $REST_SERVER_URL
